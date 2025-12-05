@@ -1,5 +1,5 @@
 # GitHub Pages 배포 가이드 (정적 HTML + Tailwind 프로젝트)
-
+- 파일 오류가 나는 이유 : 
 ### 1. TailwindCSS 빌드
 - 개발 모드 실행
 ```
@@ -31,15 +31,14 @@ aurora/output.css
 GitHub → Repository → Settings → Pages
 ```
 
-- 다음과 같이 설정
-```
-Source: Deploy from a branch
+[다음과 같이 설정]
+- Source: Deploy from a branch
 
-Branch: main
+- Branch: main
 
-Folder: / (root)
-```
-- index.html이 루트에 있기 때문에 / 선택
+- Folder: / (root)
+
+index.html이 루트에 있기 때문에 / 선택
 
 ### 4. 변경사항 푸시
 ```
@@ -51,10 +50,10 @@ git push
 
 ### 5. 배포 주소
 ```
-https://USERNAME.github.io/REPO/
+https://{USERNAME}.github.io/{REPO_NAME}/
 ```
 
-- USERNAME과 REPO는 본인 GitHub 정보로 변경
+- USERNAME과 REPO_NAME는 본인 GitHub 정보로 변경
 
 ### 6. (선택) 커스텀 도메인 연결
 - Settings → Pages → Custom domain 에서 구입한 도메인을 연결 가능
