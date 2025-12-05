@@ -58,3 +58,16 @@ https://USERNAME.github.io/REPO/
 
 ### 6. (선택) 커스텀 도메인 연결
 - Settings → Pages → Custom domain 에서 구입한 도메인을 연결 가능
+
+<hr/>
+
+⚠️**주의사항** :  **빌드 후 파일 경로에 대한 중요 참고 사항TailwindCSS를 빌드할 때, 프로젝트 구조가 다음과 같다고 가정**
+```
+/ (루트)
+├── index.html
+├── aurora/
+│   └── output.css  <-- 빌드 결과
+└── package.json
+```
+- 빌드 과정: npm run build를 실행하면 aurora/output.css 파일이 생성됨
+- 푸시 확인: git add . 명령을 했을 때, aurora/output.css 파일이 .gitignore에 의해 무시되지 않고 푸시 대상에 포함되는지 최종적으로 확인하기 (정적 파일 배포이므로 빌드 결과물을 푸시하는 것이 일반적)
